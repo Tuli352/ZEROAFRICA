@@ -511,7 +511,14 @@ main {
     padding-top: 96px;
   }
 
-  
+  .hero-badge {
+    top: 38vh;
+    left: 6px;
+    right: auto;
+    width: 104px;
+    height: 104px;
+    border-width: 3px;
+  }
 }
 
 .hero .eyebrow {
