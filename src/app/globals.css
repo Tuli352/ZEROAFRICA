@@ -506,7 +506,7 @@ main {
 
 @media (max-width: 720px) {
   .hero-badge {
-    top: 38vh;
+    top: 28vh;
     left: 6px;
     right: auto;
     width: 104px;
