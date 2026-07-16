@@ -355,19 +355,6 @@ main {
   padding: 64px var(--gutter);
 }
 
-/* Used on inner pages that no longer have a .page-hero, to push the
-   first section down clear of the sticky header. Scales down on
-   mobile instead of leaving a fixed 140px gap above the fold. */
-.section-opener {
-  padding-top: 140px;
-}
-
-@media (max-width: 640px) {
-  .section-opener {
-    padding-top: 72px;
-  }
-}
-
 .section-dark {
   background: var(--ink);
   color: var(--paper);
@@ -518,22 +505,13 @@ main {
 }
 
 @media (max-width: 720px) {
-  /* Small badge tucked in the top-left corner, right under the
-     header. Clearance is sized exactly to the badge, not a large
-     empty band, so the page content starts almost immediately and
-     never overlaps or gets truncated by the logo. */
-  .hero-badge {
-    top: 16px;
-    left: 16px;
-    right: auto;
-    width: 64px;
-    height: 64px;
-    border-width: 2px;
+  /* Reserve empty space at the top of the hero so the badge has
+     somewhere to sit without ever overlapping the headline below it */
+  .hero .hero-content {
+    padding-top: 96px;
   }
 
-  .hero .hero-content {
-    padding-top: 88px;
-  }
+  
 }
 
 .hero .eyebrow {
@@ -555,10 +533,6 @@ main {
   font-size: clamp(2.8rem, 7vw, 5rem);
   max-width: 850px;
   margin-bottom: 20px;
-}
-
-.hero h1 .hero-highlight {
-  color: var(--sprout);
 }
 
 .hero p.lede {
