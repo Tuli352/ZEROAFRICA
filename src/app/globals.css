@@ -512,11 +512,11 @@ main {
   }
 
   .hero-badge {
-    top: 14px;
-    left: auto;
-    right: var(--gutter);
-    width: 72px;
-    height: 72px;
+    top: 38vh;
+    left: 6px;
+    right: auto;
+    width: 104px;
+    height: 104px;
     border-width: 3px;
   }
 }
