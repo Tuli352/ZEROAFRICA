@@ -355,6 +355,19 @@ main {
   padding: 64px var(--gutter);
 }
 
+/* Used on inner pages that no longer have a .page-hero, to push the
+   first section down clear of the sticky header. Scales down on
+   mobile instead of leaving a fixed 140px gap above the fold. */
+.section-opener {
+  padding-top: 140px;
+}
+
+@media (max-width: 640px) {
+  .section-opener {
+    padding-top: 72px;
+  }
+}
+
 .section-dark {
   background: var(--ink);
   color: var(--paper);
