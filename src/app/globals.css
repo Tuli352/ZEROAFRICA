@@ -519,6 +519,25 @@ main {
     padding-top: 32px;
   }
 
+  /* Pull the heading/paragraph/buttons left and reserve room on the
+     right so the floating badge always has clear space beside it and
+     never squeezes or truncates a word. */
+  .hero .hero-content {
+    text-align: left;
+    padding-right: 118px;
+  }
+
+  .hero .hero-content h1,
+  .hero .hero-content p.lede {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero .hero-actions,
+  .hero .pillar-strip {
+    justify-content: flex-start;
+  }
+
   /* Old absolute corner badge is replaced by the inline version below */
   .hero-badge {
     display: none;
