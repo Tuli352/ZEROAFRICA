@@ -542,6 +542,10 @@ main {
   margin-bottom: 20px;
 }
 
+.hero h1 .hero-highlight {
+  color: var(--sprout);
+}
+
 .hero p.lede {
   color: rgba(242, 237, 224, 0.85);
   font-size: 1.2rem;
