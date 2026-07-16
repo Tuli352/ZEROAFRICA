@@ -17,11 +17,11 @@ export default function Home() {
         <div className="hero-content">
           <div className="eyebrow">Climate Solutions &bull; Carbon Markets &bull; Sustainable Livelihoods</div>
           <h1>
-            Empowering Communities. <span className="hero-highlight">Restoring Nature.</span>
+            Empowering Communities.
             <span className="hero-badge-inline">
               <img src="/images/logo-circle.png" alt="ZeroEco Africa mark" />
             </span>
-            Advancing Climate Solutions.
+            <span className="hero-highlight">Restoring Nature.</span> Advancing Climate Solutions.
           </h1>
           <p className="lede">
             To create lasting environmental and socio-economic impact by

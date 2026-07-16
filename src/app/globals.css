@@ -504,12 +504,12 @@ main {
   display: block;
 }
 
-/* In-flow badge, sits between "Restoring Nature." and "Advancing Climate
-   Solutions." inside the h1 itself. Hidden by default (desktop keeps the
-   original floating corner badge); shown only on mobile, where it becomes
-   a block box — which forces the surrounding heading text to wrap around
-   it on its own line, so it can never overlap or truncate a word no
-   matter how the rest of the heading reflows on a given phone. */
+/* In-flow badge, floated to the right inside the h1. `shape-outside`
+   lets the heading text wrap around the circle instead of stopping and
+   restarting — so the heading stays one continuous paragraph with no
+   visual gap, and the badge just sits tucked into its right side.
+   Hidden by default (desktop keeps the original floating corner badge);
+   shown only on mobile. */
 .hero-badge-inline {
   display: none;
 }
@@ -526,14 +526,17 @@ main {
 
   .hero-badge-inline {
     display: block;
-    width: 92px;
-    height: 92px;
-    margin: 18px auto;
+    float: right;
+    width: 88px;
+    height: 88px;
+    margin: 6px 0 12px 16px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgba(242, 237, 224, 0.9);
     box-shadow: 0 12px 32px rgba(18, 25, 15, 0.45);
     background: var(--paper);
+    shape-outside: circle(50%);
+    -webkit-shape-outside: circle(50%);
   }
 
   .hero-badge-inline img {
