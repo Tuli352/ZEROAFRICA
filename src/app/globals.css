@@ -518,27 +518,21 @@ main {
 }
 
 @media (max-width: 720px) {
-  /* Stack the badge above the headline in normal document flow on
-     mobile, instead of floating it absolutely and reserving blank
-     space at the top of the hero for it. */
-  .hero {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
+  /* Small badge tucked in the top-left corner, right under the
+     header. Clearance is sized exactly to the badge, not a large
+     empty band, so the page content starts almost immediately and
+     never overlaps or gets truncated by the logo. */
   .hero-badge {
-    position: static;
-    margin: 24px auto 0;
-    top: auto;
-    left: auto;
+    top: 16px;
+    left: 16px;
     right: auto;
-    width: 88px;
-    height: 88px;
-    border-width: 3px;
+    width: 64px;
+    height: 64px;
+    border-width: 2px;
   }
 
   .hero .hero-content {
-    padding-top: 20px;
+    padding-top: 88px;
   }
 }
 
