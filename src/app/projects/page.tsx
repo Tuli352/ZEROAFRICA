@@ -11,7 +11,7 @@ export default function Projects() {
     <main>
 
       {/* INTRO — hero image removed; page opens straight into copy, matching About & What We Do */}
-      <section className="section" style={{ paddingTop: '140px' }}>
+     <section className="section">
         <div className="section-inner">
           <div className="eyebrow eyebrow-strong">Projects</div>
           <h1 className="kicker-title" style={{ maxWidth: '760px' }}>
