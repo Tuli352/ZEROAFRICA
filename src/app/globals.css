@@ -505,12 +505,20 @@ main {
 }
 
 @media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+  }
+
   .hero-badge {
-    top: 38vh;
-    left: 6px;
+    position: static;
+    top: auto;
+    left: auto;
     right: auto;
-    width: 104px;
-    height: 104px;
+    margin: 0 0 20px;
+    width: 84px;
+    height: 84px;
     border-width: 3px;
   }
 }
