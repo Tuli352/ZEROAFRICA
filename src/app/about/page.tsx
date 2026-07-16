@@ -10,7 +10,7 @@ export default function About() {
     <main>
 
       {/* WHO WE ARE — now doubles as the page opener since the hero is gone */}
-      <section className="section" style={{ paddingTop: '140px' }}>
+      <section className="section section-opener">
         <div className="section-inner">
           <div className="split">
             <div className="split-text">
