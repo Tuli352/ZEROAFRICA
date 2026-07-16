@@ -505,20 +505,18 @@ main {
 }
 
 @media (max-width: 720px) {
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 32px;
+  /* Reserve empty space at the top of the hero so the badge has
+     somewhere to sit without ever overlapping the headline below it */
+  .hero .hero-content {
+    padding-top: 96px;
   }
 
   .hero-badge {
-    position: static;
-    top: auto;
-    left: auto;
+    top: 38vh;
+    left: 6px;
     right: auto;
-    margin: 0 0 20px;
-    width: 84px;
-    height: 84px;
+    width: 104px;
+    height: 104px;
     border-width: 3px;
   }
 }
