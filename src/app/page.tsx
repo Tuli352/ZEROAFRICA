@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import AutoNavigateOnScrollEnd from "./components/AutoNavigateOnScrollEnd";
 
 export default function Home() {
   return (
     <main>
+      {/* On mobile, scrolling to the end of this page pushes straight to /about
+          instead of revealing the footer. Component renders nothing visible. */}
+      <AutoNavigateOnScrollEnd to="/about" />
 
       {/* HERO — untouched structure, wording now pulled directly from the Strategic Plan */}
       <section
