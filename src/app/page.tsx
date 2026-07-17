@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       {/* On mobile, scrolling to the end of this page pushes straight to /about
           instead of revealing the footer. Component renders nothing visible. */}
-      <AutoNavigateOnScrollEnd to="/about" />
+      <AutoNavigateOnScrollEnd to="/What we do" />
 
       {/* HERO — untouched structure, wording now pulled directly from the Strategic Plan */}
       <section

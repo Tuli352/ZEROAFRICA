@@ -9,7 +9,7 @@ export const metadata = {
 export default function About() {
   return (
     <main>
-      <AutoNavigateOnScrollEnd to="/contact" />
+      <AutoNavigateOnScrollEnd to="/What we do" />
 
       {/* WHO WE ARE — now doubles as the page opener since the hero is gone */}
       <section className="section section-opener">
