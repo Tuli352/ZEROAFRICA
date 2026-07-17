@@ -39,9 +39,12 @@ export default function Contact() {
             <div className="pillar-feature-text">
               <span className="tag">Reach Us Directly</span>
               <h2>We read every message.</h2>
-              <p>Email: info@zeroecoafrica.org</p>
-              <p>Phone: +254 XXX XXX XXX</p>
-              <p>Nairobi, Kenya</p>
+              
+              <div style={{ marginBottom: '24px' }}>
+                <p><strong>Address:</strong> Lotus Plaza, Westlands, Nairobi, Kenya</p>
+                <p><strong>Phone:</strong> +254 720 374 624</p>
+                <p><strong>Email:</strong> info@zeroecoafrica.co.ke</p>
+              </div>
 
               <form className="form-grid" style={{ marginTop: '32px' }}>
                 <div>

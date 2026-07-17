@@ -87,9 +87,10 @@ export default function RootLayout({
             <div>
               <h4>Contact</h4>
               <ul>
-                <li>info@zeroecoafrica.org</li>
-                <li>+254 XXX XXX XXX</li>
+                <li>Lotus Plaza, Westlands</li>
                 <li>Nairobi, Kenya</li>
+                <li>+254 720 374 624</li>
+                <li>info@zeroecoafrica.co.ke</li>
               </ul>
             </div>
           </div>
