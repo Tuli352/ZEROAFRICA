@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AutoNavigateOnScrollEnd from "../AutoNavigateOnScrollEnd";
 
 export const metadata = {
   title: "About Us | ZeroEco Africa",
@@ -8,6 +9,7 @@ export const metadata = {
 export default function About() {
   return (
     <main>
+      <AutoNavigateOnScrollEnd to="/contact" />
 
       {/* WHO WE ARE — now doubles as the page opener since the hero is gone */}
       <section className="section section-opener">
