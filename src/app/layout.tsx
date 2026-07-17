@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
+import SiteNav from './SiteNav'
 
 export const metadata = {
   title: 'ZeroEco Africa — Climate Solutions, Carbon Markets, Sustainable Livelihoods',
@@ -26,26 +27,12 @@ export default function RootLayout({
 
             <Link href="/donate" className="nav-cta">Donate</Link>
 
-            {/* Mobile menu toggle — pure CSS, no JS needed.
+            {/* Mobile menu toggle + nav links — client component so the
+                menu can close itself the instant a link is clicked.
                 Must precede .nav-links in the DOM so the
                 ":checked ~ .nav-links" sibling selector works;
                 flex `order` in CSS puts it back on the right visually. */}
-            <input type="checkbox" id="nav-toggle" className="nav-toggle-checkbox" aria-hidden="true" />
-            <label htmlFor="nav-toggle" className="nav-toggle-label" aria-label="Toggle navigation menu" aria-controls="site-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-
-            <nav className="nav-links" id="site-nav">
-              <Link href="/">Home</Link>
-              <Link href="/about">About</Link>
-              <Link href="/what-we-do">What We Do</Link>
-              <Link href="/projects">Projects</Link>
-              <Link href="/partners">Partners</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/donate" className="nav-cta-mobile">Donate</Link>
-            </nav>
+            <SiteNav />
           </div>
         </header>
 
