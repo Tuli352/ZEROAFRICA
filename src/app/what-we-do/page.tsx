@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AutoNavigateOnScrollEnd from "../AutoNavigateOnScrollEnd";
 
 export const metadata = {
   title: "What We Do | ZeroEco Africa",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function WhatWeDo() {
   return (
     <main>
+      <AutoNavigateOnScrollEnd to="/contact" />
 
       {/* INTRO — hero image removed; page opens straight into copy, like the About page */}
      <section className="section">
