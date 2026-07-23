@@ -167,21 +167,21 @@ export default function About() {
 
             <div className="team-card">
               <div className="team-photo">
-                <Image src="/images/team-philip.jpg" alt="Philip Lenaiyasa" fill sizes="360px" style={{ objectFit: 'cover' }} />
-              </div>
-              <div className="team-body">
-                <h4>Philip Lenaiyasa</h4>
-                <span className="role">Executive Director</span>
-              </div>
-            </div>
-
-            <div className="team-card">
-              <div className="team-photo">
                 <Image src="/images/team-cyrus.jpg" alt="Dr. Cyrus Babu Ongondo" fill sizes="360px" style={{ objectFit: 'cover' }} />
               </div>
               <div className="team-body">
                 <h4>Dr. Cyrus Babu Ongondo</h4>
                 <span className="role">Chief Executive Officer</span>
+              </div>
+            </div>
+
+            <div className="team-card">
+              <div className="team-photo">
+                <Image src="/images/team-philip.jpg" alt="Philip Lenaiyasa" fill sizes="360px" style={{ objectFit: 'cover' }} />
+              </div>
+              <div className="team-body">
+                <h4>Philip Lenaiyasa</h4>
+                <span className="role">Executive Director</span>
               </div>
             </div>
 
